@@ -69,7 +69,7 @@ function getDiagonal(arr, element) {
   );
   count_diagonal_reversed = countElements(diagonal_reversed, element);
 
-  diagonal_normal = arr.map((row, index, self) => row[index]);
+  diagonal_normal = arr.map((row, index) => row[index]);
   count_diagonal_normal = countElements(diagonal_normal, element);
 
   return [count_diagonal_reversed, count_diagonal_normal];

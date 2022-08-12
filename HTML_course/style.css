@@ -1,0 +1,18 @@
+body {
+  font-family: arial, sans-serif;
+  font-size: 16px;
+}
+
+p,
+ol {
+  line-height: 1.5;
+}
+
+span {
+  font-weight: 700;
+  color: #00008b;
+}
+
+a {
+  color: #349bdf;
+}

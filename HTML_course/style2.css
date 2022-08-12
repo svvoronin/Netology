@@ -1,0 +1,42 @@
+body {
+  font-family: arial, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #349bdf;
+}
+
+figure {
+  width: 220px;
+  text-align: center;
+  padding: 18px;
+  border: 2px solid #e0e4e8;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.figure-cathedral {
+  margin-left: 40px;
+  margin-right: 0px;
+  float: right;
+}
+
+.figure-nasdaq {
+  margin-left: 0px;
+  margin-right: 40px;
+  float: left;
+}
+
+figcaption {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+p {
+  line-height: 26px;
+}
+
+ul {
+  line-height: 22px;
+}

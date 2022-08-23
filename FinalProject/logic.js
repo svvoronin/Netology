@@ -21,21 +21,18 @@ function click(row, col) {
 
   //Check all the rows of the play field, calculate number of corresponding cells clicked and return the congrats message if needed:
   // Rows:
-  for (let i = 0; i < arr_size; i++) {
-    count = countElements(board[i], players[activePlayer]);
-    if (count == arr_size) {
-      showWinner(activePlayer);
-    }
+  count = countElements(board[row], players[activePlayer]);
+  if (count == arr_size) {
+    showWinner(activePlayer);
   }
 
   //Check all the columns of the play field, calculate number of corresponding cells clicked and return the congrats message if needed:
   //Columns:
-  for (let i = 0; i < arr_size; i++) {
-    arr = getCol(board, i);
-    count = countElements(arr, players[activePlayer]);
-    if (count == arr_size) {
-      showWinner(activePlayer);
-    }
+
+  arr = getCol(board, col);
+  count = countElements(arr, players[activePlayer]);
+  if (count == arr_size) {
+    showWinner(activePlayer);
   }
 
   //Check diagonals (two) of the play field, calculate number of corresponding cells clicked and return the congrats message if needed:

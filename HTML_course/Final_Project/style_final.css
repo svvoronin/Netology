@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.page {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: open-sans-bold;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: open-sans-regular;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+  background-color: #070505;
+  padding-bottom: 146px;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-size: cover;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  background-color: #000000;
+  opacity: 0.6;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.header-container {
+  width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  position: relative;
+  align-items: center;
+}
+
+.menu-logo {
+  width: 179px;
+  padding-top: 45px;
+}
+
+.header-title {
+  margin-top: 141px;
+  position: relative;
+  z-index: 1;
+  font-size: 45px;
+  color: #ffffff;
+  text-align: center;
+  max-width: 679px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: open-sans-bold;
+  text-transform: uppercase;
+}
+
+.menu-list-item {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.menu {
+  font-family: open-sans-regular;
+  font-size: 13px;
+}
+
+.menu-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu-list-item:nth-child(n + 2) {
+  margin-left: 40px;
+}
+
+.menu-list-item:hover {
+  text-decoration: underline;
+}
+
+.menu-list {
+  display: flex;
+  padding-top: 45px;
+  list-style-type: none;
+}
+
+/* Main Content */
+
+.content {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+
+.news-tag-item {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.news-tag-item:nth-child(n + 2) {
+  margin-left: 20px;
+}
+
+.tag-title {
+  text-decoration: none;
+  color: #b59f5b;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: open-sans-bold;
+}
+
+.main {
+  padding-top: 64px;
+  width: 778px;
+}
+
+.news-block {
+  padding-left: 30px;
+}
+
+.news-link {
+  font-size: 20px;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: open-sans-bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.date {
+  font-size: 12px;
+  color: #888888;
+  font-weight: 400;
+  font-family: open-sans-regular;
+  margin-right: 15px;
+}
+
+.news-time {
+  margin-top: 36px;
+  margin-bottom: 54px;
+}
+
+.news-img {
+  width: 380px;
+}
+
+.author {
+  font-size: 12px;
+  color: #000000;
+  font-weight: 700;
+  font-family: open-sans-bold;
+}
+
+.news-info {
+  width: 367px;
+  height: 62px;
+  font-size: 15px;
+
+  color: #0f0d0e;
+  font-weight: 400;
+  font-family: open-sans-regular;
+}
+
+.aside {
+  padding-top: 64px;
+  width: 274px;
+  margin-left: 120px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 66px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+  border-bottom: 3px solid #d4c8a2;
+}
+
+.title-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: open-sans-bold;
+}
+
+.post {
+  display: flex;
+  margin-top: 30px;
+}
+
+.post-picture {
+  margin-right: 20px;
+  width: 70px;
+}
+
+.post-time {
+  margin-bottom: 10px;
+}
+
+.post-link {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 700;
+  font-family: open-sans-bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.new-posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-paragraph {
+  margin-top: 20px;
+}

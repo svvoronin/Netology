@@ -1,0 +1,12 @@
+.courses-list-item {
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.course {
+  padding: 20px 45px;
+}

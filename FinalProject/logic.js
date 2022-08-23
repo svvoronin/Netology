@@ -19,14 +19,14 @@ function click(row, col) {
   board[row][col] = players[activePlayer];
   renderBoard(board);
 
-  //Check all the rows of the play field, calculate number of corresponding cells clicked and return the congrats message if needed:
+  //Check the row of the play field, calculate number of corresponding total signs clicked and return the congrats message if needed:
   // Rows:
   count = countElements(board[row], players[activePlayer]);
   if (count == arr_size) {
     showWinner(activePlayer);
   }
 
-  //Check all the columns of the play field, calculate number of corresponding cells clicked and return the congrats message if needed:
+  //Check the column of the play field, calculate number of corresponding total signs clicked and return the congrats message if needed:
   //Columns:
 
   arr = getCol(board, col);
